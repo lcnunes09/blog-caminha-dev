@@ -104,6 +104,23 @@ Dentro de web/src, criar pasta assets. Dentro dessa pasta:
 - Criar pasta images.
 - Criar pasta styles e arquivo global.css.
 
+Segue abaixo nossa estrutura final de arquivos:
+> web
+>> node_modules
+>> public
+>>> index.html
+>> src
+>>> assets
+>>>> images
+>>>> styles
+>>>>> global.css
+>>> App.tsx
+>>> index.tsx
+>> .gitignore
+>> package.json
+>> tsconfig.json
+>> yarn.lock
+
 ## Configurando CSS e HTML com estilo inicial
 
 No arquivo global.css, já deixar um setup padrão para as páginas, por exemplo:
