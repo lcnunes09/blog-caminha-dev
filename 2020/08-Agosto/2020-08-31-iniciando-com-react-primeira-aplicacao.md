@@ -1,8 +1,44 @@
 
 # Iniciando uma aplicação React
+Olá! Criei essa postagem para ajudar vocês nos primeiros passos com um projeto React. Minha motivação maior foi que eu iniciei como dev tendo experiências em hackathons, porém apenas utilizando HTML, CSS e JavaScript. O que foi muito bom, porém entender de React trouxe outras possibilidades e facilidades que espero compartilhar com vocês! Muito do que está aqui eu aprendi participando das Next Level Week (houveram duas até o momento dessa postagem) e também assistindo videos no youtube. Espero ajudar e que você veja o quão simples é ter sua aplicação em React!
+
+## Preparação do ambiente
+Uma forma que pode ajudar a instalação do Node na sua máquina é utilizar gerenciadores de pacotes. (Nesta página)[https://nodejs.org/en/download/package-manager/] é possível encontrar várias plataformas diferentes e como instalar. 
+
+Caso esteja utilizando Windows, o meu caso, eu instalei o (Chocolatey)[https://chocolatey.org/install] para me ajudar na instalação de 3 coisas: NPM, Yarn e Node.
+
+### Para instalar o Chocolatey: 
+1) Abrir o PowerShell do Windows como Administrador;
+2) Rode o comando ```Get-ExecutionPolicy```. Se retornar ```Restricted```, rode o comando ```Set-ExecutionPolicy AllSigned``` ou o comando ```Set-ExecutionPolicy Bypass -Scope Process```.
+3) Confirme que o Get-ExecutionPolicy não está Restricted.
+4) Rode o comando ```Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))```.
+5) Digite ```choco``` para ver se o Chocolatey foi instalado e veja a versão instalada.
+
+#### Para instalar o Node e NPM
+Rode o comando abaixo para instalar o Node junto com NPM utilizando o Chocolatey: 
+```
+cinst nodejs.install
+```
+
+#### Para instalar o Yarn
+```
+choco install yarn
+```
+
+NPM e Yarn são gerenciadores de pacotes para javscriptque vão te ajudar a instalar dependências necessárias no seu projeto e, espero, contribuir no desenvolvimento. O Yarn é mais aprimorado que o NPM: mais rápido e tem algumas funcionalidades mais avançadas.
+
+Para concluir, eu precisei reiniciar minha máquina para verificar que tudo estava funcionando conforme esperado. Para confirmar, rode os comandos para saber a versão:
+
+```
+node -v
+npm -v
+yarn -v
+```
+
+Não se esqueça que precisa ter o GIT instalado na sua máquina! :)
 
 ## Assumindo que você já tem instalado
-Se não tiver, clique aqui.
+Para criar sua primeira aplicação React é tão simples quanto uma linha de código, literalmente! Primeiro, vá para pasta que você queira criar o seu repositório.
 ```
 - yarn create react-app web --template typescript
 ```
@@ -49,6 +85,8 @@ import React from 'react';
 
 - App.tsx
 ```
+import React from 'react';
+
 function App() {
   return (
     <div className="App">
@@ -74,23 +112,6 @@ No arquivo global.css, já deixar um setup padrão para as páginas, por exemplo
     font-size: 60%;
 
     --color-background: #F0F0F7;
-    --color-primary-lighter: #9871F5;
-    --color-primary-light: #916BEA;
-    --color-primary: #8257E5;
-    --color-primary-dark: #774DD6;
-    --color-primary-darker: #6842C2;
-    --color-secundary: #04D361;
-    --color-secundary-dark: #04BF58;
-    --color-title-in-primary: #FFFFFF;
-    --color-text-in-primary: #D4C2FF;
-    --color-text-title: #32264D;
-    --color-text-complement: #9C98A6;
-    --color-text-base: #6A6180;
-    --color-line-in-white: #E6E6F0;
-    --color-input-background: #F8F8FC;
-    --color-button-text: #FFFFFF;
-    --color-box-base: #FFFFFF;
-    --color-box-footer: #FAFAFC;
 }
 
 * {
@@ -140,8 +161,9 @@ import './assets/styles/global.css';
 
 No arquivo public/index.html, colocar o link para a fonte que vou utilizar, pegando no site google fonts.
 
-Dica CSS: 
-- Trabalhar em unidade de rem  para trabalhar mais fácil com porcentagem no font-size.
+Dicas: 
+- Trabalhar em unidade de rem para facilitar aumentar e diminuir a fonte utilizando porcentagem no font-size, principalmente no caso de Mobile / Website.
+- Priorizar a importação da fonte ser feita através da tag link, ao invés de @import, pois pode causar problemas. 
 
 ## Estruturando primeira página!
 
@@ -195,3 +217,12 @@ E depois chamada na tag img, atributo src, do código, entre chaves. Exemplo:
 ```
 <div className="buttons-container">
 ```
+
+
+### Final!
+
+No final, você já consegue ter uma estrutura básica para começar seu projeto usando React!
+
+Para mais informações e dar uma olhada no código em desenvolvimento, acessem (esse repositório)[https://github.com/lcnunes09/nlw2-proffy]. Projeto realizado durante a Next Level Week #2, pela Rocketseat, onde estou refazendo e atualizando!
+
+Qualquer dúvida, conte comigo!
