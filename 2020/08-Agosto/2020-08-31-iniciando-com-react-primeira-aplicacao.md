@@ -105,6 +105,7 @@ Dentro de web/src, criar pasta assets. Dentro dessa pasta:
 - Criar pasta styles e arquivo global.css.
 
 Segue abaixo nossa estrutura final de arquivos:
+```
 > web
 >> node_modules
 >> public
@@ -120,6 +121,7 @@ Segue abaixo nossa estrutura final de arquivos:
 >> package.json
 >> tsconfig.json
 >> yarn.lock
+```
 
 ## Configurando CSS e HTML com estilo inicial
 
@@ -176,7 +178,12 @@ No arquivo App.tsx, chamar o global.css, adicionando linha
 import './assets/styles/global.css';
 ```
 
-No arquivo public/index.html, colocar o link para a fonte que vai utilizar. Utilizar o site [Google Fonts](https://fonts.google.com/) pode ajudar muito.
+No arquivo `public/index.html`, colocar o link para a fonte que vai utilizar. Você pode utilizar o site [Google Fonts](https://fonts.google.com/) pode ajudar muito.
+
+O exemplo de fonte utilizada neste código é a fonte Poppins, que você pode importar com o link abaixo, colocando no `public/index.html`:
+```
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+```
 
 Dicas: 
 - Em CSS, recomendo utilizar em unidade de rem ao invés de pixels. Isso facilita aumentar e diminuir a fonte utilizando porcentagem no font-size, principalmente no caso de desenvolvimento Mobile / Website. 
