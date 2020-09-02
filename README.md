@@ -1,6 +1,6 @@
 # Caminha Dev! 
 
-## :rocket: Vamos trilhar nossos caminhos juntas como pessoas desenvolvedoras :heart:
+## :rocket::heart: Vamos trilhar nossos caminhos juntas como pessoas desenvolvedoras 
 
 Repositório contendo algumas dicas que estou aprendendo nesta jornada como pessoa desenvolvedora.
 
