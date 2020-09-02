@@ -3,9 +3,9 @@
 Olá! Criei essa postagem para ajudar vocês nos primeiros passos com um projeto React. Minha motivação maior foi que eu iniciei como dev tendo experiências em hackathons, porém apenas utilizando HTML, CSS e JavaScript. O que foi muito bom, porém entender de React trouxe outras possibilidades e facilidades que espero compartilhar com vocês! Muito do que está aqui eu aprendi participando das Next Level Week (houveram duas até o momento dessa postagem) e também assistindo videos no youtube. Espero ajudar e que você veja o quão simples é ter sua aplicação em React!
 
 ## Preparação do ambiente
-Uma forma que pode ajudar a instalação do Node na sua máquina é utilizar gerenciadores de pacotes. (Nesta página)[https://nodejs.org/en/download/package-manager/] é possível encontrar várias plataformas diferentes e como instalar. 
+Uma forma que pode ajudar a instalação do Node na sua máquina é utilizar gerenciadores de pacotes. [Nesta página](https://nodejs.org/en/download/package-manager/) é possível encontrar várias plataformas diferentes e como instalar. 
 
-Caso esteja utilizando Windows, o meu caso, eu instalei o (Chocolatey)[https://chocolatey.org/install] para me ajudar na instalação de 3 coisas: NPM, Yarn e Node.
+Caso esteja utilizando Windows, o meu caso, eu instalei o [Chocolatey](https://chocolatey.org/install) para me ajudar na instalação de 3 coisas: NPM, Yarn e Node.
 
 ### Para instalar o Chocolatey: 
 1) Abrir o PowerShell do Windows como Administrador;
@@ -225,6 +225,6 @@ No final, você já consegue ter uma estrutura básica para começar seu projeto
 
 ![](https://github.com/lcnunes09/caminhos-dev/blob/main/images/2020-08-31-landing-page-react.jpg)
 
-Para mais informações e dar uma olhada no código em desenvolvimento, acessem (esse repositório)[https://github.com/lcnunes09/nlw2-proffy]. Projeto realizado durante a Next Level Week #2, pela Rocketseat, onde estou refazendo e atualizando!
+Para mais informações e dar uma olhada no código em desenvolvimento, acessem [esse repositório](https://github.com/lcnunes09/nlw2-proffy). Projeto realizado durante a Next Level Week #2, pela Rocketseat, onde estou refazendo e atualizando!
 
 Qualquer dúvida, conte comigo!
