@@ -25,9 +25,9 @@ cinst nodejs.install
 choco install yarn
 ```
 
-NPM e Yarn são gerenciadores de pacotes para javscriptque vão te ajudar a instalar dependências necessárias no seu projeto e, espero, contribuir no desenvolvimento. O Yarn é mais aprimorado que o NPM: mais rápido e tem algumas funcionalidades mais avançadas.
+NPM e Yarn são gerenciadores de pacotes para javascript que vão te ajudar a instalar dependências necessárias no seu projeto e, espero, contribuir no desenvolvimento. Yarn é mais aprimorado que o NPM: mais rápido e tem algumas funcionalidades mais avançadas.
 
-Para concluir, eu precisei reiniciar minha máquina para verificar que tudo estava funcionando conforme esperado. Para confirmar, rode os comandos para saber a versão:
+Para concluir, eu precisei reiniciar minha máquina para verificar que tudo estava funcionando conforme esperado. Para confirmar, rode os comandos para saber a versão que está instalada no seu computador:
 
 ```
 node -v
@@ -40,15 +40,15 @@ Não se esqueça que precisa ter o GIT instalado na sua máquina! :)
 ## Assumindo que você já tem instalado
 Para criar sua primeira aplicação React é tão simples quanto uma linha de código, literalmente! Primeiro, vá para pasta que você queira criar o seu repositório.
 ```
-- yarn create react-app web --template typescript
+yarn create react-app web --template typescript
 ```
 
 ou 
 ```
-- npx create-react-app web --template typescript
+npx create-react-app web --template typescript
 ```
 
-No meu computador, aparece um erro dependendo da pasta que eu esteja se eu estiver usando yarn. Desta forma, pode utilizar o comando npx.
+No meu computador, aparecia um erro dependendo da pasta que eu estivesse rodando o comendo utilizando yarn. Desta forma, pode utilizar o comando npx para a criação da apliação React, sem problemas.
 
 Obs: Mesmo usando npx, é possível utilizar os comandos do yarn depois :)
 
@@ -58,15 +58,16 @@ Obs: Mesmo usando npx, é possível utilizar os comandos do yarn depois :)
 yarn start
 ```
 
-E agora tem um servidor frontend React rodando! Acesse: http://localhost:3000/
+E agora você tem um servidor frontend React rodando! Acesse para visualizar essa lindeza: http://localhost:3000/
 
 ## Limpar a estrutura
-- Deletar README: podemos criar um readme depois, melhor estruturado.
-- Dentro da pasta src, deletar os arquivos CSS, Testes, Service Worker, Logo: dado que não precisamos utilizar agora no início.
+O React instala por padrão diversos arquivos que, para essa aplicação mais simples, não iremos utilizar. Então, segue as dicas:
+- Deletar README: podemos criar um readme depois, melhor estruturado e específico para o projeto.
+- Dentro da pasta src, deletar os arquivos de CSS, Testes, Service Worker, Logo: dado que não precisamos utilizar agora no início.
 
 No arquivo index.tsx, deletar as chamadas dos arquivos CSS e Service worker que não estão mais utilizados.
 
-- index.tsx
+- `index.tsx`
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -81,9 +82,8 @@ ReactDOM.render(
 ```
 
 No arquivo App.tsx, deletar chamadas CSS e logo, assim como apagar HTML e deixar apenas um Hello World :D
-import React from 'react';
 
-- App.tsx
+- `App.tsx`
 ```
 import React from 'react';
 
@@ -98,9 +98,9 @@ function App() {
 export default App;
 ```
 
-Na pasta public, apenas deixar o index.html. Neste index.html, deletar as chamadas CSS e favicon. Deixar o body apenas com a tag do noscript e a div root.
+Na pasta public, apenas deixar o arquivo `index.html`. Neste arquivo, deletar as chamadas CSS e favicon. Deixar o body apenas com a tag do noscript e a div root.
 
-Dentro de web/src, criar pasta assets. Dentro da pasta assets:
+Dentro de web/src, criar pasta assets. Dentro dessa pasta:
 - Criar pasta images.
 - Criar pasta styles e arquivo global.css.
 
@@ -159,23 +159,26 @@ No arquivo App.tsx, chamar o global.css, adicionando linha
 import './assets/styles/global.css';
 ```
 
-No arquivo public/index.html, colocar o link para a fonte que vou utilizar, pegando no site google fonts.
+No arquivo public/index.html, colocar o link para a fonte que vai utilizar. Utilizar o site [Google Fonts](https://fonts.google.com/) pode ajudar muito.
 
 Dicas: 
-- Trabalhar em unidade de rem para facilitar aumentar e diminuir a fonte utilizando porcentagem no font-size, principalmente no caso de Mobile / Website.
-- Priorizar a importação da fonte ser feita através da tag link, ao invés de @import, pois pode causar problemas. 
+- Em CSS, recomendo utilizar em unidade de rem ao invés de pixels. Isso facilita aumentar e diminuir a fonte utilizando porcentagem no font-size, principalmente no caso de desenvolvimento Mobile / Website. 
+- Ao efetuar a importação da fonte, caso utilize Google Fonts, priorize a importação da fonte através da tag link, ao invés de @import, pois pode causar problemas mirabolantes não identificáveis no futuro. 
 
 ## Estruturando primeira página!
 
-Dicas :: Componentes React:
-- Nome do componente sempre em letra maiúscula
-- Sempre que criar um componente, importar React
+Dicas | Componentes React:
+- Nome do componente sempre em letra maiúscula.
+- Sempre que criar um componente, importar React na primeira linha.
 
-Dentro de src, criar pasta pages e dentro dela a pasta Landing, para iniciar a estrutura da Landing Page. 
-Dentro dessa pasta, criar arquivo index.tsx.
+Suponha que você vai construir uma página inicial principal, a qual chamamos Landing Page.
+
+Dentro da pasta `src`, criar pasta `pages` e dentro dela a pasta `Landing`, para iniciar a estrutura da Landing Page. 
+
+Dentro dessa pasta, criar arquivo `index.tsx`.
 
 ### Criando a primeira página
-Exemplo de como iniciar um código index.tsx para exibir a primeira página
+Exemplo de como iniciar um código `index.tsx` para exibir a primeira página:
 
 ```
 import React from 'react';
@@ -192,28 +195,42 @@ Não esquecer de chamar ela no App.tsx!
 import Landing from './pages/Landing';
 ```
 
-Assim como, chamar a página dentro do return da função App():
+Assim como, chamar a página dentro do return da função App(). Ficando no final:
 ```
-<Landing />
+import React from 'react';
+
+import Landing from './pages/Landing';
+
+import './assets/styles/global.css';
+
+function App() {
+  return (
+    <Landing />
+  );
+}
+
+export default App;
 ```
 
 ## E como começa a brincadeira?
-Dentro do return da função da página criada, agora é só usar HTML!
+Dentro do return da função da página criada, agora é só usar HTML! 
+
+Para criar o estilo desta página, dentro da pasta `Landing` criar arquivo `style.css` e é só alegria!
 
 ### Alguns pontos importantes:
-- A imagem sempre precisa ser importada no topo da página, junto com os outros imports:
+A imagem sempre precisa ser importada no topo da página, junto com os outros imports:
 
 ```
 import logoImg from '../../assets/images/logo.svg';
 ```
 
-E depois chamada na tag img, atributo src, do código, entre chaves. Exemplo:
+E depois chamada na tag `img`, atributo `src`, do código, entre chaves. Exemplo:
 
 ```
 <img src={logoImg} alt="Proffy"/>
 ```
 
- - O atributo class do HTML é agora className. Exemplo:
+O atributo class do HTML é agora `className`. Exemplo:
 ```
 <div className="buttons-container">
 ```
