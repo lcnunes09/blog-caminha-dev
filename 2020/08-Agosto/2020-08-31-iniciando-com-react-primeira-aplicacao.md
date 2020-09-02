@@ -223,6 +223,8 @@ E depois chamada na tag img, atributo src, do código, entre chaves. Exemplo:
 
 No final, você já consegue ter uma estrutura básica para começar seu projeto usando React!
 
+![](https://github.com/lcnunes09/caminhos-dev/blob/main/images/2020-08-31-landing-page-react.jpg)
+
 Para mais informações e dar uma olhada no código em desenvolvimento, acessem (esse repositório)[https://github.com/lcnunes09/nlw2-proffy]. Projeto realizado durante a Next Level Week #2, pela Rocketseat, onde estou refazendo e atualizando!
 
 Qualquer dúvida, conte comigo!
