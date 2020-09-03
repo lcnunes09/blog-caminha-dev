@@ -2,7 +2,7 @@
 
 Depois de criarmos a Landing page, o que acontece se precisarmos criar mais páginas para o nosso projeto?
 
-É isso que vamos fazer hoje! Se está aqui e não sabe criar um projeto usando React, recomendo dar uma olhada na postagem [Iniciando com React](https://github.com/lcnunes09/caminhos-dev/blob/main/2020/08-Agosto/2020-08-31-iniciando-com-react-primeira-aplicacao.md)
+É isso que vamos fazer hoje! Se está aqui e não sabe criar um projeto usando React, recomendo dar uma olhada na postagem [Iniciando com React](https://github.com/lcnunes09/caminhos-dev/blob/main/2020/08-Agosto/2020-08-31-iniciando-com-react-primeira-aplicacao.md)!
 
 ## Criando a estrutura
 
@@ -22,7 +22,15 @@ function Cadastro() {
 export default Cadastro;
 ``` 
 
-Todas as páginas vão utilizar essa estrutura básica!
+Todas as páginas vão utilizar essa estrutura básica! 
+
+## Adicionando CSS
+Caso queira adicionar CSS específico para página, na mesma pasta `Cadastro`, criar arquivo `styles.css` e colocar o estilo que queira utilizar!
+
+Não se esqueça de importar o `styles.css` no arquivo `Cadastro/index.tsx`, como foi feito na página Landing:
+```
+import './styles.css';
+```
 
 ## Criando as Rotas
 
