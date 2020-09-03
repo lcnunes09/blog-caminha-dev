@@ -8,13 +8,15 @@ Para dar mais contexto, seguindo o que foi divulgado na [matéria do Gizmodo](ht
 
 ```
 O CEO do Github, Nat Friedman, afirmou que a companhia está trabalhando para substituir termos como `master` (mestre) e `slave` (escravo) por termos neutros como `main` (principal). A plataforma, que pertence à Microsoft, é utilizada por 50 milhões de desenvolvedores para armazenar e atualizar projetos.
-
+```
+```
 A discussão sobre os termos acontece na comunidade de programação há mais de uma década, mas o debate racial levantado nos Estados Unidos após a morte de George Floyd incentivou que algumas lideranças tomassem decisões.
-
+```
+```
 Os termos Master/Slave geralmente são utilizados no hardware, arquitetura e códigos para se referir a um dispositivo, base de dados ou processo que controla outro. No Github, o termo `master` é utilizado para apontar o principal ramo de um repositório."
 ```
 
-Dado esse contexto, fiz esta postagem para ajudar você a aproveitar este momento para atualizar a branch principal dos seus projetos para `main`, assim como, para todos os projetos novos que você criar, deixe `main` como sua branch principal. 
+**Dado esse contexto, fiz esta postagem para ajudar você a aproveitar este momento para atualizar a branch principal dos seus projetos para `main`, assim como, para todos os projetos novos que você criar, deixe `main` como sua branch principal.**
 
 Segue esse fio bem explicado e simples:
 
@@ -24,11 +26,11 @@ Segue esse fio bem explicado e simples:
 
 Antes de seguir, garanta que seu código está atualizando na branch master no GitHub!
 
-1. Assumindo que você tem o seu projeto utilizando a branch master,  primeiro você cria a branch no seu repositório local e navega para esta branch, digitando o código:
+1. Assumindo que você tem o seu projeto utilizando a branch master,  primeiro você cria a branch no seu repositório local e entra nesta branch, digitando o código:
 ``` 
 git branch -m master main
 ```
-2. Depois, manda a branch main para o repositório remoto (GitHub), dando o push:
+2. Depois, manda esta branch main criada para o repositório remoto (GitHub), dando o push:
 ```
 git push -u origin main
 ```
@@ -47,6 +49,7 @@ Na próxima tela, escolha a branch main e clique no botão `Update`:
 ![](https://github.com/lcnunes09/caminhos-dev/blob/main/images/2020-09-03-main-04.jpg)
 
 Na paz, você clica no "I understand, update the default branch.".
+
 ![](https://github.com/lcnunes09/caminhos-dev/blob/main/images/2020-09-03-main-05.jpg)
 
 Volte na listagem das branches e, também na paz, dê fim a branch master clicando na lixeirinha vermelha do lado direito!
@@ -55,7 +58,7 @@ Volte na listagem das branches e, também na paz, dê fim a branch master clican
 
 E pronto! Só fazer isso nos outros projetos existentes.
 
-Caso tenha dado algum erro, verifique se você não tem regras definidas para branch nas configurações do repositório.
+Caso tenha dado algum erro, verifique se você não tem regras definidas para branch nas configurações do repositório. Se tiver, você pode excluir indo em `Branches` dentro das configurações.
 
 ![](https://github.com/lcnunes09/caminhos-dev/blob/main/images/2020-09-03-main-07.jpg)
 
@@ -78,17 +81,27 @@ Caso você esteja desenvolvendo com pessoas e crie uma organização para isso, 
 
 ![](https://github.com/lcnunes09/caminhos-dev/blob/main/images/2020-09-03-main-11.jpg)
 
-O GitHub já ajuda no processo, é só clicar no botão!
+O GitHub já ajuda no processo, é só clicar no botão `Update`!
 ![](https://github.com/lcnunes09/caminhos-dev/blob/main/images/2020-09-03-main-12.jpg)
 
 
-## É isso gente!
-Valeu gente. Tutorial bem simples e explicado.
+## E o mais importante:
+Agora, quando você pushar um código, você utiliza o comando:
+```
+git push origin main
+```
 
-Lembrando que não é apenas fazer essas ações que tornam você anti racista, mas ações diárias, estimulando pessoas a fazerem isso também, lendo sobre o assunto, seguindo e consumindo o conteúdo de pessoas negras, tirando outros termos racistas do seu vocabulário!
+Lindeza! :heart:
+
+## É isso gente!
+Valeu gente. Tutorial bem simples e espero que bem explicado. Se tiver alguma dúvida ou algo incorreto, por favor, é só falar!
+
+**Lembrando que não é apenas fazer essas ações que tornam você anti racista, mas ações diárias, estimulando pessoas a fazerem isso também, lendo sobre o assunto, seguindo e consumindo o conteúdo de pessoas negras, tirando outros termos racistas do seu vocabulário, entre outras coisas!**
 
 Textos recomendados do Portal Geledes:
 [Em boca fechada não entra racismo: 13 expressões racistas que devem sair do seu vocabulário](https://www.geledes.org.br/em-boca-fechada-nao-entra-racismo-13-expressoes-racistas-que-devem-sair-seu-vocabulario/)
+
 [18 expressões racistas que você usa sem saber](https://www.geledes.org.br/18-expressoes-racistas-que-voce-usa-sem-saber/)
 
-Espero ter ajudado :heart:
+
+Espero ter ajudado! :heart:
