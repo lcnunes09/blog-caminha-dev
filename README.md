@@ -14,4 +14,6 @@ Repositório contendo algumas dicas que estou aprendendo nesta jornada como pess
 
 02 [Criando mais páginas e rotas usando React!](https://github.com/lcnunes09/blog-caminha-dev/blob/main/2020/09-Setembro/2020-09-02-criando-mais-paginas-e-rotas-com-react.md)
 
-02 [Utilizando Single Page Application em React](https://github.com/lcnunes09/blog-caminha-dev/blob/main/2020/09-Setembro/2020-09-02-utilizando-single-page-application-no-seu-projeto.md)
+02 [Utilizando abordagem Single Page Application no seu Projeto em React](https://github.com/lcnunes09/blog-caminha-dev/blob/main/2020/09-Setembro/2020-09-02-utilizando-abordagem-single-page-application-no-seu-projeto-em-react.md)
+
+03 [Atualizando a branch do seu projeto de master para main](https://github.com/lcnunes09/blog-caminha-dev/blob/main/2020/09-Setembro/2020-09-03-atualizando-a-branch-do-seu-projeto-de-master-para-main.md)
