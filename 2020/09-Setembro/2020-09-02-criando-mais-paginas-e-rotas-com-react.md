@@ -1,8 +1,8 @@
-# Criando mais páginas usando React!
+# Criando mais páginas e rotas usando React!
 
 Depois de criarmos a Landing page, o que acontece se precisarmos criar mais páginas para o nosso projeto?
 
-É isso que vamos fazer hoje! Se está aqui e não sabe criar um projeto usando React, recomendo dar uma olhada na postagem (Iniciando com React)[https://github.com/lcnunes09/caminhos-dev/blob/main/2020/08-Agosto/2020-08-31-iniciando-com-react-primeira-aplicacao.md]
+É isso que vamos fazer hoje! Se está aqui e não sabe criar um projeto usando React, recomendo dar uma olhada na postagem [Iniciando com React](https://github.com/lcnunes09/caminhos-dev/blob/main/2020/08-Agosto/2020-08-31-iniciando-com-react-primeira-aplicacao.md)
 
 ## Criando a estrutura
 
