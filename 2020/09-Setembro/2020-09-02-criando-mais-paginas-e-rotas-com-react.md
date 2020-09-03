@@ -72,6 +72,7 @@ import Cadastro from './pages/Cadastro';
 Dica:
 - Não precisa colocar especificamente o arquivo index.tsx pois o React já reconhece automaticamente!
 - Para a página principal do projeto, ou seja, quando a pessoa acessar minhapagina.com.br ela visualizar a página "Landing", basta colocar o path como "/" e direcionando qual página será visualizada. Porém, para não confundir o navegador e mostrar tanto o cadastro quanto a Landing quando entrarmos em /cadastro, dado que tem uma "/" no link, precisamos colocar o atributo `exact` para apenas aparecer a página Landing caso o usuário acesse exatamente a página principal do nosso projeto, por exemplo, minhapagina.com.br. 
+- Se estiver usando VS Code, você pode instalar a extensão feita pela Rocketseat: `Rocketseat ReactJS`. Esta extensão ajuda no auto complemento enquanto está desenvolvendo!
 
 Se ficou difícil de entender, faça o teste sem o atributo `exact` e entre na página localhost:3000/cadastro. Deve exibir as duas páginas, Landing e Cadastro.
 
