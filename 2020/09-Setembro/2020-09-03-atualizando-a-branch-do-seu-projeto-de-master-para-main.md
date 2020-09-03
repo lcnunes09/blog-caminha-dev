@@ -6,15 +6,9 @@ Dado que estou participando do Mega Hack Women, tendo muitas mulheres que estão
 
 Para dar mais contexto, seguindo o que foi divulgado na [matéria do Gizmodo](https://gizmodo.uol.com.br/github-planeja-remover-termos-como-master/):
 
-```
-O CEO do Github, Nat Friedman, afirmou que a companhia está trabalhando para substituir termos como `master` (mestre) e `slave` (escravo) por termos neutros como `main` (principal). A plataforma, que pertence à Microsoft, é utilizada por 50 milhões de desenvolvedores para armazenar e atualizar projetos.
-```
-```
-A discussão sobre os termos acontece na comunidade de programação há mais de uma década, mas o debate racial levantado nos Estados Unidos após a morte de George Floyd incentivou que algumas lideranças tomassem decisões.
-```
-```
-Os termos Master/Slave geralmente são utilizados no hardware, arquitetura e códigos para se referir a um dispositivo, base de dados ou processo que controla outro. No Github, o termo `master` é utilizado para apontar o principal ramo de um repositório."
-```
+__O CEO do Github, Nat Friedman, afirmou que a companhia está trabalhando para substituir termos como `master` (mestre) e `slave` (escravo) por termos neutros como `main` (principal). A plataforma, que pertence à Microsoft, é utilizada por 50 milhões de desenvolvedores para armazenar e atualizar projetos.__
+__A discussão sobre os termos acontece na comunidade de programação há mais de uma década, mas o debate racial levantado nos Estados Unidos após a morte de George Floyd incentivou que algumas lideranças tomassem decisões.__
+__Os termos Master/Slave geralmente são utilizados no hardware, arquitetura e códigos para se referir a um dispositivo, base de dados ou processo que controla outro. No Github, o termo `master` é utilizado para apontar o principal ramo de um repositório."__
 
 **Dado esse contexto, fiz esta postagem para ajudar você a aproveitar este momento para atualizar a branch principal dos seus projetos para `main`, assim como, para todos os projetos novos que você criar, deixe `main` como sua branch principal.**
 
