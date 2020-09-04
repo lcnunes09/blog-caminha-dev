@@ -17,3 +17,5 @@ Repositório contendo algumas dicas que estou aprendendo nesta jornada como pess
 02 [Utilizando abordagem Single Page Application no seu Projeto em React](https://github.com/lcnunes09/blog-caminha-dev/blob/main/2020/09-Setembro/2020-09-02-utilizando-abordagem-single-page-application-no-seu-projeto-em-react.md)
 
 03 [Atualizando a branch do seu projeto de master para main](https://github.com/lcnunes09/blog-caminha-dev/blob/main/2020/09-Setembro/2020-09-03-atualizando-a-branch-do-seu-projeto-de-master-para-main.md)
+
+04 [Criando backend API utilizando Django](https://github.com/lcnunes09/blog-caminha-dev/blob/main/2020/09-Setembro/2020-09-04-criando-backend-api-em-django.md)
