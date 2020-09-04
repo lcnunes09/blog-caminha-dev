@@ -111,7 +111,7 @@ Agora vamos criar um Serializer! E o que é isso?
 
 "É um processo para converter uma estrutura de dados ou um objeto em um formato que possa ser armazenado ou transferido."
 
-Mais informações, dá uma (lida nesse post)[https://medium.com/@thaisdalencar/o-que-%C3%A9-serializa%C3%A7%C3%A3o-serialization-fc0887bd0970].
+Mais informações, dá uma [lida nesse post](https://medium.com/@thaisdalencar/o-que-%C3%A9-serializa%C3%A7%C3%A3o-serialization-fc0887bd0970).
 
 
 Criar arquivo `serializers.py` dentro de `meuapp` e colocar:
