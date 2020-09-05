@@ -177,7 +177,7 @@ KEY: Content-Type
 VALUE: application/json
 ```
 
-- No body, enviar:
+- No body, escolher `raw` e digitar:
 ```
 {
     "nome": "Fulana",
