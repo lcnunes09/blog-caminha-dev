@@ -150,15 +150,26 @@ class UsuarioViewSet(viewsets.ModelViewSet):
 
 
 ## Criando rota
-Agora preciasamos criar uma rota para que possamos chamar a nossa API. Para isso, no arquivo `urls.py`, colocar:
+Agora preciasamos criar uma rota para que possamos chamar a nossa API. Para isso, no arquivo `urls.py` dentro da pasta `server`, colocar:
 
 ```
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('/', include('meuapp.urls')),
+    path('', include('meuapp.urls')),
 ]
+```
+
+Para criar a rota da API, entrar no arquivo `url.py`, mas dessa vez dentro da pasta `meuapp`, e colocar:
+```
+from rest_framework import routers
+from .api import UsuarioViewSet
+
+router = routers.DefaultRouter()
+router.register('api/usuarios', UsuarioViewSet, 'usuarios')
+
+urlpatterns = router.urls
 ```
 
 # Chamando a API
